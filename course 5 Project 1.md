@@ -19,11 +19,12 @@ echo=TRUE
 steps_day<-aggregate(steps~date, data=activity,sum, na.action=na.omit)
 hist(steps_day$steps,xlab="steps taken per day", main="Total number of steps taken per day")
 #calcultae the mean and median
+
+![plot of chunk Total number of steps taken per day](./Course-5-Reproducible-Research/Total number of steps taken per day.png)
+
 mean(steps_day$steps)
 median(steps_day$steps)     
 ```
-![plot of chunk Total number of steps taken per day](./Course-5-Reproducible-Research/Total number of steps taken per day.png)
-
 ##What is the average daily activity pattern?
 ```{r}
 library(ggplot2)
