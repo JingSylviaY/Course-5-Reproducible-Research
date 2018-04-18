@@ -2,7 +2,7 @@
 
 ##Loading and preprocessing the data
 
-```{r}
+```r
 knitr::opts_chunk$set(echo = TRUE)
 setwd("C:/Users/yinjing/Desktop/R/Coursera")
 activity<-read.csv("activity.csv")
@@ -13,7 +13,7 @@ activity$date<-as.Date(activity$date)
 
 ##What is mean total number of steps taken per day?
 missing values are ignored.
-```{r}
+```r
 echo=TRUE
 
 steps_day<-aggregate(steps~date, data=activity,sum, na.action=na.omit)
