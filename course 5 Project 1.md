@@ -1,7 +1,4 @@
----
-title: "Activity"
-output: html_document
----
+
 
 ##Loading and preprocessing the data
 
